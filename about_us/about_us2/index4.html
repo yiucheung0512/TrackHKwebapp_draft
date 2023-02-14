@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+		<title>About Us - Carbon Track</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Poppins"
+		/>
+		<script src="https://unpkg.com/scrollreveal"></script>
+	</head>
+	<body>
+		<section class="sec-02">
+			<div class="container">
+				<h2 class="main-title">How the App Works</h2>
+				<div class="content">
+					<div class="image">
+						<img src="div4.jpeg" alt="" />
+					</div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+				<div class="content">
+					<div class="info">
+						<h3 class="info-title">/01<br />Easy Input</h3>
+						<p>
+							Simply input the item and quantity consumed in each category and
+							click on "add row" to input more items. Then, click "calculate"
+							and your carbon emission report will be generated. (WORK BEST ON
+							TABLETS AND COMPUTERS)
+						</p>
+					</div>
+					<div class="image">
+						<img src="div5.jpeg" alt="" />
+					</div>
+					<div class="info">
+						<h3 class="info-title">/02<br />Rich Infographics and Report</h3>
+						<p>
+							After recording your data in the app, press "calculate" to
+							generate a report of your daily carbon output which help users
+							identify major carbon making sources in their lifestyle and be
+							aware of their environmental impact.
+						</p>
+					</div>
+					<div class="image">
+						<img src="div6.jpeg" alt="" />
+					</div>
+				</div>
+      </div>
+    </div>
+		</section>
+		<script>
+			ScrollReveal({
+				reset: true,
+				distance: "80px",
+				duration: 2000,
+				delay: 200
+			});
+			//scroll reveal tuning
+			ScrollReveal().reveal(".main-title", { delay: 200, origin: "right" });
+			ScrollReveal().reveal(".sec-01 .image", { delay: 250, origin: "left" });
+			ScrollReveal().reveal(".text-box", { delay: 300, origin: "right" });
+			ScrollReveal().reveal(".sec-02 .image, .sec-03 .image", {
+				delay: 200,
+				origin: "bottom"
+			});
+			ScrollReveal().reveal(".info-title", { delay: 250, origin: "right" });
+			ScrollReveal().reveal(".info", { delay: 300, origin: "right" });
+			ScrollReveal().reveal(".media-info li", {
+				delay: 200,
+				origin: "left",
+				interval: 800
+			});
+		</script>
+	</body>
+</html>

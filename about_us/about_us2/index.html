@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+		<title>About Us - Carbon Track</title>
+		<link rel="stylesheet" href="style2.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Poppins"
+		/>
+		<script src="https://unpkg.com/scrollreveal"></script>
+	</head>
+	<body>
+		<section class="sec-02">
+			<div class="container">
+				<h2 class="main-title">About Us</h2>
+				<div class="content">
+					<div class="info">
+						<h3 class="info-title">Our Goal</h3>
+						<div class="info-text">
+							<p>
+								As global warming intensifies around the globe, every one of us
+								can play our part in reducing carbon emissions. Therefore, we
+								set out to use our knowledge and contribute to helping the
+								environment by making a webapp.
+							</p>
+						</div>
+					</div>
+					<div class="image">
+						<img src="div1.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			ScrollReveal({
+				reset: true,
+				distance: "80px",
+				duration: 2000,
+				delay: 200
+			});
+			//scroll reveal tuning
+			ScrollReveal().reveal(".main-title", { delay: 200, origin: "right" });
+			ScrollReveal().reveal(".sec-01 .image", { delay: 250, origin: "left" });
+			ScrollReveal().reveal(".text-box", { delay: 300, origin: "right" });
+			ScrollReveal().reveal(".sec-02 .image, .sec-03 .image", {
+				delay: 200,
+				origin: "bottom"
+			});
+			ScrollReveal().reveal(".info-title", { delay: 250, origin: "right" });
+			ScrollReveal().reveal(".info", { delay: 300, origin: "right" });
+			ScrollReveal().reveal(".media-info li", {
+				delay: 200,
+				origin: "left",
+				interval: 800
+			});
+		</script>
+	</body>
+</html>

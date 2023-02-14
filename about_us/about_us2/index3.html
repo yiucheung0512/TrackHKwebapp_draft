@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>About Us - Carbon Track</title>
+    <link rel="stylesheet" href="style3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <section class="sec-02">
+      <div class="container">
+        <h2 class="main-title">How Are We Helping</h2>
+        <div class="content">
+          <div class="image">
+            <img src="div3.png" alt="" />
+          </div>
+          <div class="info">
+            <h3 class="info-title">Our App</h3>
+            <div class="info-text">
+              <p>
+                As programming enthusiasts, we made a webapp that estimates the
+                daily carbon emission of the user. By learning more about your
+                own habits, you will start to learn about what food you consume
+                or what activities you participate in create the most carbon
+                emission. Our webapp tracks your carbon emission from food
+                consumption, transportation and utilities like water and
+                electricity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <div class="content">
+          <div class="info">
+            <h3 class="info-title">Partnering NGOs</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="NGOs">
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="london.png" alt="" />
+          <h3 class="">Name of First NGO</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#" class="ctn">Donate</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="newyork.png" alt="" />
+          <h3 class="">Name of Second NGO</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#" class="ctn">Donate</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="newyork.png" alt="" />
+          <h3 class="">Name of Third NGO</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#" class="ctn">Donate</a>
+        </div>
+      </div>
+    </section>
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "80px",
+        duration: 2000,
+        delay: 200
+      });
+      //scroll reveal tuning
+      ScrollReveal().reveal(".main-title", { delay: 200, origin: "right" });
+      ScrollReveal().reveal(".sec-01 .image", { delay: 250, origin: "left" });
+      ScrollReveal().reveal(".text-box", { delay: 300, origin: "right" });
+      ScrollReveal().reveal(".sec-02 .image, .sec-03 .image", {
+        delay: 200,
+        origin: "bottom"
+      });
+      ScrollReveal().reveal(".info-title", { delay: 250, origin: "right" });
+      ScrollReveal().reveal(".info", { delay: 300, origin: "right" });
+      ScrollReveal().reveal(".media-info li", {
+        delay: 200,
+        origin: "left",
+        interval: 800
+      });
+    </script>
+  </body>
+</html>

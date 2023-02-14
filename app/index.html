@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TRACK HK</title>
+  <link rel="apple-touch-icon" href="https://s8vufu.csb.app/app/icon-192x192.png">
+  <link rel="icon" type="image/x-icon" href="https://s8vufu.csb.app/app/icon-192x192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="https://s8vufu.csb.app/app/manifest.json">
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.10.1.js"></script>
+    
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+		/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+  font-size: larger;
+  width: 100%;
+}
+/*form{
+  max-width: 1000px;
+}*/
+.w3-container{
+  margin: auto;
+  position: relative;
+  top: 60px;
+  margin: 30px calc((100% - 80vw)/2);
+  max-width: 100vw;
+}
+
+.navcolour{
+  color: #000!important;
+  background-color: #8EED53;
+}
+
+fieldset {
+    border: 3px solid #7b4425 !important;
+}
+
+.chart {
+  width: 100%;
+  min-height: 450px;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+/*#Gauge table div{
+  display: inline-block;
+  margin: 0 auto;
+  left: 0;
+}*/
+
+form:has(div) > div, form, .results{
+  margin-block-end: 10%;
+}
+
+fieldset:has(div) > div{
+  text-align: left;
+  padding: 12px !important;
+}
+
+fieldset legend{
+  margin: 0;
+  padding: 0 15px;
+}
+
+.results{
+  display: none;
+}
+
+.reportimg{
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 990px){
+.w3-col.M3 {
+  width: 24.9999%;
+  text-align: center;
+  padding: 0 !important;
+}
+fieldset > select{
+  padding: 12px !important;
+}
+fieldset > input{
+  padding: 12px !important;
+}
+}
+
+#installInstructions {
+	display: none
+}
+@media (display-mode: browser) {
+	#installInstructions {
+		display: block
+	}
+}
+
+.add{
+  text-align: end;
+  margin-top: 10px;
+}
+  </style>
+
+
+<script
+type="text/javascript"
+src="app.js" defer></script>
+</head>
+
+<body>
+
+  <p id="requireHTTPS" class="hidden">
+    <b>STOP!</b> This page <b>must</b> be served over HTTPS.
+    Please <a>reload this page via HTTPS</a>.
+  </p>
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar navcolour w3-wide w3-padding w3-card">
+      <div class="w3-bar-item"><b>TRACK</b> HK</div>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="../index.html" class="w3-bar-item">HOME</a>
+      </div>
+      <div id="installContainer" class="w3-right hidden">
+          <button id="butInstall" type="button" class="w3-bar-item w3-hover-opacity" style="
+          background: none;
+          border: 2px solid !important;
+          border-radius: 20px;
+          padding: 5px 12px;
+      ">
+                  <span class="glyphicon glyphicon-download-alt"></span> Install
+              </button>
+      </div>
+      <div id="installInstructions" class="w3-right">
+          <button id="installInstructions" type="button" class="w3-bar-item w3-hover-opacity" style="
+          background: none;
+          border: 2px solid !important;
+          border-radius: 20px;
+          padding: 5px 12px;" onclick="document.getElementById('instruction').style.display='block'">
+                  <span class="glyphicon glyphicon-download-alt"></span> Install
+              </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+      <div id="instruction" class="w3-modal" style="display: hidden;">
+          <div class="w3-modal-content">
+              <span onclick="document.getElementById('instruction').style.display='none'" class="w3-button w3-display-topright">x</span>
+              <div class="w3-container" style="/* height:80vh; */background: white; margin:0px;">
+              <img src="https://s8vufu.csb.app/app/instructions.jpeg" style="width:100%">
+            </div>
+          </div>
+        </div>    
+
+        <h1> TRACK YOUR FOOTPRINT</h1>
+        <form action="" class="form">
+    
+    <fieldset class="wrapper1 w3-col l10 s12">
+          <legend>Food</legend> 
+          <div class="row1">
+          <div summary="data panel" class="w3-row-padding">
+            <div class="w3-col M3 s12">Value one: </div>
+              <select name="cars" class="food w3-col M3 s12 w3-input">undefined<option value="Beef">Beef</option><option value="Pork">Pork</option><option value="Chicken">Chicken</option></select>
+            <div class="w3-col M3 s12">Value two:</div>
+              <input type="number" class="famount w3-col M3 s12 w3-input w3-border">
+          </div>
+        </div>
+    </fieldset>
+        <div class="add w3-col l1 s12"><a href="#" class="addMore1"><i class="fa fa-plus"></i>  Add</a></div>
+    
+    <fieldset class="wrapper2 w3-col l10 s12">
+          <legend>Transport</legend> 
+          <div class="row2">
+              <div summary="data panel" class="w3-row-padding">
+                <div class="w3-col M3 s12">Value one: </div>
+    
+                  <select name="cars" class="trans w3-col M3 s12 w3-input">undefined<option value="Car(Diesel)">Car(Diesel)</option><option value="Car(Gasoline)">Car(Gasoline)</option><option value="Car(hybrid)">Car(hybrid)</option><option value="Car(Electric)">Car(Electric)</option><option value="Motorbike">Motorbike</option><option value="Bus">Bus</option><option value="LightRail">LightRail</option><option value="Tram">Tram</option><option value="Ferry">Ferry</option><option value="Flight">Flight</option></select>
+    
+                <div class="w3-col M3 s12">Value two:</div>
+                  <input type="number" class="tamount w3-col M3 s12 w3-input w3-border">
+              </div>
+            </div>
+        </fieldset>
+        <div class="add w3-col l1 s12"><a href="#" class="addMore2"><i class="fa fa-plus"></i>  Add</a></div>
+          
+          <fieldset class="wrapper3 w3-col l10 s12">
+          <legend>Utilities</legend> 
+          <div class="row3">
+            <div summary="data panel" class="w3-row-padding">
+              <div class="w3-col M3 s12">Value one: </div>
+    
+                <select name="cars" class="utilities w3-col M3 s12 w3-input">undefined<option value="Electricity">Electricity</option><option value="Water">Water</option><option value="Gas">Gas</option></select>
+    
+              <div class="w3-col M3 s12">Value two:</div>
+                <input type="number" class="uamount w3-col M3 s12 w3-input w3-border">
+            </div>
+          </div>
+        </fieldset>
+        <div class="add w3-col l1 s12"><a href="#" class="addMore3"><i class="fa fa-plus"></i>  Add</a></div>
+        <div class="w3-col s12">
+        <button class="w3-button w3-border">Send It!</button>
+        </div>
+    </form>
+  
+  <div class="results">
+  <h2>Form Data</h2>
+</div>
+</style>
+
+</style>
+
+
+<div id="report" class="w3-modal" style="display:none; padding-top:0;">
+  <div class="w3-modal-content" style="width:90%; padding: 5%;">
+    <div class="w3-container">
+        <span onclick="document.getElementById('report').style.display='none'"
+        class="w3-button w3-display-topright" style="z-index: 99999;">&times;</span>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1><b>TRACK</b> Report</h1>
+            <p>
+              Input your daily consumptions and <i>TRACK</i> your footprint!
+            </p>
+          </div>
+          <div class="col-md-4 col-md-offset-4">
+            <hr />
+          </div>
+          <div class="col-md-6">
+            <div class="chart w3-card w3-margin-top w3-padding-large">
+              <div id="TOTAL" class="w3-margin-top w3-padding-large">
+              </div>
+              <div
+                  id="Gauge"
+                  class="w3-padding-large" style="margin-left: 30%; min-height: 300px;"
+                ></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              id="chart_div1"
+              class="chart w3-card w3-margin-top w3-padding-large"
+            ></div>
+          </div>
+          <div class="col-md-6">
+            <div
+              id="chart_div2"
+              class="chart w3-card w3-margin-top w3-padding-large"
+            ></div>
+            <div
+              id="chart_div5"
+              class="chart w3-card w3-margin-top w3-padding-large"
+            ></div>
+          </div>
+    
+          <div class="col-md-6">
+            <div
+              id="chart_div3"
+              class="chart w3-card w3-margin-top w3-padding-large"
+            ></div>
+            <div
+              id="chart_div6"
+              class="chart w3-card w3-margin-top w3-padding-large"
+            ></div>
+          </div>
+    
+          <div class="col-md-6">
+            <div
+              id="chart_div4"
+              class="chart w3-card w3-margin-top w3-padding-large"
+            ></div>
+            <div
+              id="chart_div7"
+              class="chart w3-card w3-margin-top w3-padding-large"
+            ></div>
+          </div>
+          <div class="col-md-6">
+              <div
+              class="reportimg chart w3-card w3-margin-top w3-padding-large"
+            > <img src="../TRACK(1).png" style="width:100%"></div>
+            <div id="rawresponse" class="chart w3-card w3-margin-top w3-padding-large" style="overflow:auto;"></div>
+          </div>
+        </div>
+
+</div>
+
+</div>
+</div></div>
+</div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://www.google.com/jsapi"></script>
+</body>
+</html>
