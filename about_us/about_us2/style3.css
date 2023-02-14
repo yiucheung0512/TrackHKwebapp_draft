@@ -187,10 +187,11 @@ section {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	align-items: baseline;
 	padding: 80px 100px;
 	color: #fff;
 	margin-bottom: 35px;
+	margin: auto;
 }
 
 .row {
@@ -234,13 +235,17 @@ section {
 	color: white;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1360px) {
 	.NGOs {
 		flex-wrap: wrap;
-		width: 100%;
+		width: clamp(300px, 40%, 400px);
+		padding: 0;
 	}
 	.row .col img {
 		border-radius: 15px;
+	}
+	.section {
+		padding: 0;
 	}
 }
 
