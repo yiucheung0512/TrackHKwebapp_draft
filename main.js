@@ -5,6 +5,8 @@ if (mobile == true) {
 	var loader = document.getElementById("loader");
 	var loadText = document.getElementById("load");
 	var icon = document.getElementById("icon");
+	var canvas = document.getElementById("canvas3d");
+
 	loadText.innerText = "";
 	icon.style = "none";
 	icon.src = "TRACK(2).png";
@@ -13,7 +15,8 @@ if (mobile == true) {
 	icon.style.position = "absolute";
 	icon.style.top = "40%";
 	icon.style.left = "calc((100% - 75%)/2)";
-	document.body.style.background = "rgb(23 61 32 / 60%)";
+	canvas.style.background = "#ffffff";
+	document.body.style.background = "#ffffff";
 }
 
 var slideIndex = 1;
