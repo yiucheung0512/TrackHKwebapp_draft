@@ -51,8 +51,8 @@ canvas {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	color: #fff !important;
-	background-color: rgba(58, 58, 58, 0.103) !important;
+	color: #fff;
+	background: rgba(58, 58, 58, 0.103);
 	overflow: hidden;
 }
 
