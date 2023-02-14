@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////////////
 //////////////slidenav///////////
-if (mobile == true) {
+if (mobile === true) {
 	//console.log("off");
 	var loader = document.getElementById("loader");
 	var loadText = document.getElementById("load");
@@ -27,8 +27,8 @@ if (mobile == true) {
 	lbt.style.color = "black";
 	rbt.style.border = "black 1px solid";
 	rbt.style.color = "black";
-	for (var i = 0; i < load.length; i++) {
-		load[i].style.color = "black";
+	for (var u = 0; u < load.length; u++) {
+		load[u].style.color = "black";
 	}
 	sign.style.color = "black";
 }
@@ -56,10 +56,10 @@ function showDivs(n) {
 	x[slideIndex - 1].style.display = "block";
 }
 
-if (mobile == false) {
+if (mobile === false) {
 	document.addEventListener("keypress", function (event) {
 		var key = event.keyCode;
-		if (key == 116 || key == 84) {
+		if (key === 116 || key === 84) {
 			slideIndex = 2;
 			window.dispatchEvent(
 				new KeyboardEvent("keydown", {
@@ -67,7 +67,7 @@ if (mobile == false) {
 				})
 			);
 			lowernav(0);
-		} else if (key == 114 || key == 82) {
+		} else if (key === 114 || key === 82) {
 			slideIndex = 3;
 			window.dispatchEvent(
 				new KeyboardEvent("keydown", {
@@ -75,7 +75,7 @@ if (mobile == false) {
 				})
 			);
 			lowernav(2);
-		} else if (key == 97 || key == 65) {
+		} else if (key === 97 || key === 65) {
 			slideIndex = 4;
 			window.dispatchEvent(
 				new KeyboardEvent("keydown", {
@@ -83,7 +83,7 @@ if (mobile == false) {
 				})
 			);
 			lowernav(2);
-		} else if (key == 99 || key == 67) {
+		} else if (key === 99 || key === 67) {
 			slideIndex = 5;
 			window.dispatchEvent(
 				new KeyboardEvent("keydown", {
@@ -91,7 +91,7 @@ if (mobile == false) {
 				})
 			);
 			lowernav(2);
-		} else if (key == 107 || key == 75) {
+		} else if (key === 107 || key === 75) {
 			slideIndex = 6;
 			window.dispatchEvent(
 				new KeyboardEvent("keydown", {
@@ -118,7 +118,7 @@ function showDivs2(n) {
 		x[i].style.display = "none";
 	}
 	x[slideIndex - 1].style.display = "block";
-	if (mobile == false) {
+	if (mobile === false) {
 		var list = ["t", "r", "a", "c", "k"];
 		var list2 = ["84", "82", "65", "67", "75"];
 		document.dispatchEvent(
@@ -188,7 +188,7 @@ setTimeout(removeWatermark, 500);
 
 /////////////////////////////////////////////////////////////////////////////
 //////////////Blur loading//////////
-if (mobile == false) {
+if (mobile === false) {
 	var canvas = document.getElementById("canvas3d");
 	var loader = document.getElementById("loader");
 	var loadText = document.getElementById("load");
